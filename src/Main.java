@@ -16,11 +16,11 @@ public class Main {
                 if(a > 10 || b > 10) throw new IOException("incorrect data format");
 
                 switch (mass[1]){
-                    case "+": System.out.println(a+b); return;
-                    case "-": System.out.println(a-b); return;
-                    case "/": System.out.println(a/b); return;
-                    case "*": System.out.println(a*b); return;
-                    default: throw new IOException("incorrect data format");
+                    case "+" -> System.out.println(a+b);
+                    case "-" -> System.out.println(a-b);
+                    case "/" -> System.out.println(a/b);
+                    case "*" -> System.out.println(a*b);
+                    default -> throw new IOException("incorrect data format");
                 }
             }
             else{
@@ -28,13 +28,12 @@ public class Main {
                 int b = RomanNumber.toArabian(mass[2]);
 
                 switch (mass[1]){
-                    case "+": System.out.println(RomanNumber.toRoman(a+b)); return;
-                    case "-": System.out.println(RomanNumber.toRoman(a-b)); return;
-                    case "/": System.out.println(RomanNumber.toRoman(a/b)); return;
-                    case "*": System.out.println(RomanNumber.toRoman(a*b)); return;
-                    default: throw new IOException("incorrect data format");
+                    case "+" -> System.out.println(RomanNumber.toRoman(a+b));
+                    case "-" -> System.out.println(RomanNumber.toRoman(a-b));
+                    case "/" -> System.out.println(RomanNumber.toRoman(a/b));
+                    case "*" -> System.out.println(RomanNumber.toRoman(a*b));
+                    default -> throw new IOException("incorrect data format");
                 }
-
             }
         }
         catch (IOException e) {
