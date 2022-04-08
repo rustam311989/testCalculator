@@ -16,6 +16,7 @@ public class Main {
                 if(a > 10 || b > 10) throw new IOException("incorrect data format");
 
                 switch (mass[1]){
+
                     case "+" -> System.out.println(a+b);
                     case "-" -> System.out.println(a-b);
                     case "/" -> System.out.println(a/b);
